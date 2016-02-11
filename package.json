@@ -1,7 +1,7 @@
 {
   "name": "sails-hook-redibox",
   "description": "Sails hook for RediBox.",
-  "version": "0.1.10",
+  "version": "0.1.11",
   "main": "lib/index.js",
   "author": "salakar",
   "repository": "salakar/sails-hook-redibox",
@@ -21,7 +21,7 @@
     "babel-plugin-add-module-exports": "^0.1.2"
   },
   "dependencies": {
-    "redibox": "0.1.10",
+    "redibox": "0.1.11",
     "sails-util-mvcsloader": "^0.3.2"
   }
 }
