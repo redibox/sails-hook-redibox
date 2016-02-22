@@ -1,13 +1,14 @@
 {
   "name": "sails-hook-redibox",
   "description": "Sails hook for RediBox.",
-  "version": "0.1.11",
+  "version": "0.1.12",
   "main": "lib/index.js",
   "author": "salakar",
   "repository": "salakar/sails-hook-redibox",
   "license": "MIT",
   "scripts": {
     "compile": "babel src --out-dir lib",
+    "compile-watch": "babel src --watch src --out-dir lib",
     "prepublish": "npm run compile"
   },
   "sails": {
@@ -21,7 +22,7 @@
     "babel-plugin-add-module-exports": "^0.1.2"
   },
   "dependencies": {
-    "redibox": "0.1.11",
+    "redibox": "0.1.12",
     "sails-util-mvcsloader": "^0.3.2"
   }
 }

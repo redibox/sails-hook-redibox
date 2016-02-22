@@ -28,26 +28,19 @@ import RediBox from 'redibox';
 
 export default function (sails) {
   const services = require('sails-util-mvcsloader')(sails);
-  services.injectAll({
-    policies: __dirname + '/api/policies',
-    config: __dirname + '/api/config'
-  });
-
   return {
     initialize: function (next) {
       if (!sails.config.redibox && !sails.config.hooks.redibox) {
         return next(new Error('No RediBox config found at sails.config.hooks.redibox, aborting!'));
       }
-
       const eventsToWaitFor = ['hook:orm:loaded'];
 
       sails.after(eventsToWaitFor, () => {
         this.instance = new RediBox(sails.config.redibox || sails.config.hooks.redibox);
         this.instance.on('ready', function (status) {
-          sails.log.verbose('Redis Cache: ', status);
+          sails.log.verbose('Redibox: ', status);
           services.injectAll({
             controllers: __dirname + '/api/controllers', // Path to your hook's controllers
-            models: __dirname + '/api/models', // Path to your hook's models
             services: __dirname + '/api/services' // Path to your hook's services
           }, function (error) {
             return next(error);
