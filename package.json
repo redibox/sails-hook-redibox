@@ -1,28 +1,39 @@
 {
   "name": "sails-hook-redibox",
   "description": "Sails hook for RediBox.",
-  "version": "0.1.13",
+  "version": "0.1.14",
   "main": "lib/index.js",
-  "author": "salakar",
-  "repository": "salakar/sails-hook-redibox",
+  "author": {
+    "name": "Mike Diarmid",
+    "email": "mike.diarmid@teamfa.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/salakar/sails-hook-redibox.git"
+  },
   "license": "MIT",
   "scripts": {
-    "compile": "babel src --out-dir lib",
-    "compile-watch": "babel src --watch src --out-dir lib",
-    "prepublish": "npm run compile"
+    "build": "babel src --out-dir lib",
+    "build-watch": "babel src --watch src --out-dir lib",
+    "prepublish": "npm run lint && npm run build",
+    "lint": "eslint src/"
   },
   "sails": {
     "isHook": true
   },
   "devDependencies": {
-    "babel-cli": "*",
-    "babel-preset-es2015-node4": "*",
-    "babel-plugin-transform-export-extensions": "^6.4.0",
+    "babel-cli": "^6.75",
+    "babel-plugin-add-module-exports": "^0.1.2",
     "babel-plugin-syntax-export-extensions": "^6.3.13",
-    "babel-plugin-add-module-exports": "^0.1.2"
+    "babel-plugin-transform-export-extensions": "^6.4.0",
+    "babel-preset-es2015-node4": "*",
+    "eslint": "^2.7.0",
+    "eslint-config-airbnb": "^7.0.0",
+    "eslint-plugin-jsx-a11y": "^0.6.2",
+    "eslint-plugin-react": "^4.3.0"
   },
   "dependencies": {
-    "redibox": "0.1.13",
+    "redibox": "^0.1.13",
     "sails-util-mvcsloader": "^0.3.2"
   }
 }
