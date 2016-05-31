@@ -1,1 +1,1 @@
-export default sails.hooks.redibox.instance.job;
+export default sails.hooks.redibox.instance.hooks.job;

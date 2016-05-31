@@ -1,1 +1,1 @@
-export default sails.hooks.redibox.instance.cache;
+export default sails.hooks.redibox.instance.hooks.cache;

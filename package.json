@@ -1,7 +1,7 @@
 {
   "name": "sails-hook-redibox",
   "description": "Sails hook for RediBox.",
-  "version": "0.1.14",
+  "version": "1.0.0",
   "main": "lib/index.js",
   "author": {
     "name": "Mike Diarmid",
@@ -22,18 +22,18 @@
     "isHook": true
   },
   "devDependencies": {
-    "babel-cli": "^6.75",
+    "babel-cli": "^6.7",
     "babel-plugin-add-module-exports": "^0.1.2",
     "babel-plugin-syntax-export-extensions": "^6.3.13",
     "babel-plugin-transform-export-extensions": "^6.4.0",
-    "babel-preset-es2015-node4": "*",
+    "babel-preset-es2015-node6": "*",
     "eslint": "^2.7.0",
     "eslint-config-airbnb": "^7.0.0",
     "eslint-plugin-jsx-a11y": "^0.6.2",
     "eslint-plugin-react": "^4.3.0"
   },
   "dependencies": {
-    "redibox": "^0.1.13",
+    "redibox": "^2.0.0",
     "sails-util-mvcsloader": "^0.3.2"
   }
 }
