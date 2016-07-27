@@ -33,7 +33,6 @@
     "eslint-plugin-react": "^4.3.0"
   },
   "dependencies": {
-    "redibox": "^2.0.0",
-    "sails-util-mvcsloader": "^0.3.2"
+    "redibox": "^2.1.0"
   }
 }
