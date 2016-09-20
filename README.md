@@ -8,14 +8,14 @@
 ![dev dependencies](https://img.shields.io/david/dev/salakar/sails-hook-redibox.svg)
 ![License](https://img.shields.io/npm/l/sails-hook-redibox.svg)
 
-Sails hook for [RediBox](https://github.com/Salakar/redibox)
+Sails hook for [RediBox](https://github.com/redibox/core) - exposes any installed hooks as SailsJS services.
 
 ## Getting Started
 
 Install it via npm:
 
 ```shell
-npm install sails-hook-redibox
+npm install sails-hook-redibox --save
 ```
 
 Sails config can be placed in `config/hooks/redibox.js` or `config/redibox.js`.
