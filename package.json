@@ -33,6 +33,6 @@
     "eslint-plugin-react": "^4.3.0"
   },
   "dependencies": {
-    "redibox": "^2.1.0"
+    "redibox": "^2.2.2"
   }
 }
